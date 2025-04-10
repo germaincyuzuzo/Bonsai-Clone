@@ -253,3 +253,133 @@ section.addons .addondiv span{
     position: relative;
     top: 4px;
 }
+
+.yourbusiness{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #e9fcf7;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+.yourbusiness p{
+    width: 80%;
+    font-size: 40px;
+}
+
+.yourbusiness p span{
+    color: #00b289;
+}
+
+.yourbusiness button{
+    height: 60px;
+}
+
+section.faqs{
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section.faqs h1{
+    text-align: center;
+    color: #00b289;
+}
+
+section.faqs .questions{
+    padding: 10px;
+}
+
+section.faqs .questions div.q1 h2::after{
+    content: "";
+    background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    left: 439px;
+}
+
+section.faqs .questions div.q2 h2::after{
+    content: "";
+    background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    left: 429px;
+}
+
+section.faqs .questions div.q3 h2::after{
+    content: "";
+    background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    left: 300px;
+}
+
+section.faqs .questions div.q4 h2::after{
+    content: "";
+    background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    left: 458px;
+}
+
+footer{
+    background-color: #e9fcf7;
+}
+
+main.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: anchor-center;
+    padding: 30px;
+}
+
+main.footer section h1{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+main.footer div ul li{
+    list-style-type: none;
+    position: relative;
+    right: 40px;
+    font-weight: 100;
+    padding: 3px;
+    cursor: pointer;
+}
+
+section.product div:last-child ul li:first-child{
+    color: #00b289;
+}
+
+ul li.dropdown::after{
+    content: "";
+    background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 3px;
+}
