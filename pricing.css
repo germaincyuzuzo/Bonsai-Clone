@@ -6,6 +6,7 @@ body{
     color: rgb(77, 77, 77);
 }
 
+
 section#header{
     background-color: white;
     padding: 10px;
@@ -197,7 +198,58 @@ div.plan .startfree{
     margin-top: 70px;
 }
 
-.addons{
+section.addons{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 30px;
+}
 
-    
+section.addons h1{
+    text-align: center;
+    margin: 50px 0;
+}
+
+section.addons .addondiv{
+    box-shadow: 0 0 60px 0 rgba(2,4,69,.05);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+section.addons .addondiv div{
+    width: 80%;
+}
+
+section.addons .addondiv span{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 20%;
+}
+
+.addondiv span p{
+    margin: 0;
+}
+.addondiv span p:last-child{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.tax div .learnmore{
+    color: #00b289;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+.tax div .learnmore::after{
+    content: "";
+    background-image: url('./img/right-arrow-svgrepo-com.svg');
+    display: inline-block;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px;
 }
