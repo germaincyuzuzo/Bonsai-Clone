@@ -293,6 +293,11 @@ section.faqs .questions{
     padding: 10px;
 }
 
+section.faqs .questions div h2:hover{
+    color: #00b289;
+    cursor: pointer;
+}
+
 section.faqs .questions div.q1 h2::after{
     content: "";
     background-image: url('./img/down-arrow-5-svgrepo-com.svg');
