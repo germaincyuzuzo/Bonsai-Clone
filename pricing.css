@@ -8,24 +8,29 @@ body{
 
 section#header{
     background-color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .navbar{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
     align-items: center;
 }
 
-.navbar .right h1{
-    color: #00b289;
-    font-size: 30px;
+.navbar .right img{
+    max-width: 40%;
 }
 
 .navbar ul{
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 
 .navbar ul li{
@@ -46,6 +51,7 @@ section#header{
     border-radius: 7px;
     outline: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .startfree{
@@ -57,6 +63,7 @@ section#header{
     font-weight: bold;
     width: 140px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .downarrow::after{
@@ -69,4 +76,128 @@ section#header{
     position: relative;
     top: 3px;
     left: 3px;
+}
+
+section.prices{
+    background-color: #e9fcf7;
+    padding-top: 150px;
+}
+
+div.priceheading{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+div.priceheading h1{
+    font-size: 35px;
+}
+
+.priceheading div.periods{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.priceheading div.periods div{
+    background-color: #00b289;
+    width: 60px;
+    height: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.periods div::before{
+    content: "";
+    background-image: url('./img/circle-svgrepo-com.svg');
+    display: inline-block;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 2px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+.priceheading img{
+    position: absolute;
+    right: 28%;
+    top: 25%;
+}
+
+section.plans{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1150px;
+    margin: 0px auto;
+    column-gap: 40px;
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+
+div.plan{
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+div.plan h1{
+    font-size: 25px;
+    margin: 0;
+}
+
+div.pricetag{
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #00b289;
+    margin-bottom: 30px;
+}
+
+div.pricetag span:first-child{
+    font-size: 25px;
+}
+
+div.pricetag span:nth-child(2){
+    font-size: 50px;
+    font-weight: bold;
+}
+
+div.pricetag span:last-child{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+div.inclusives ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+div.inclusives ul li::before{
+    content: "";
+    background-image: url('./img/tick-svgrepo-com.svg');
+    display: inline-block;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px;
+    right: 10px;
+}
+
+div.plan .startfree{
+    height: 70px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.addons{
+
+    
 }
