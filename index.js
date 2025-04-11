@@ -25,3 +25,34 @@ let isActive = false;
         isActive = !isActive;
         btntoggle.classList.toggle("changetoggle", isActive);
     };
+
+let product = document.getElementById("dropdown");
+let dropContent = document.getElementById("dropcontent");
+
+product.onmouseover = () =>{
+    if (dropContent.className !== "dropcontent"){
+        dropContent.classList = ("dropcontent");
+        dropContent.style.display = "block";
+    }
+
+    product.onmouseleave = () =>{
+        if (dropContent.className == "dropcontent"){
+            dropContent.classList = ("");
+            dropContent.style.display = "none";
+        }
+    };
+};
+
+dropContent.onmouseover = () =>{
+    if (dropContent.className !== "dropcontent"){
+        dropContent.classList = ("dropcontent");
+        dropContent.style.display = "block";
+    }
+
+    dropContent.onmouseleave = () =>{
+        if (dropContent.className == "dropcontent"){
+            dropContent.classList = ("");
+            dropContent.style.display = "none";
+        }
+    };
+};

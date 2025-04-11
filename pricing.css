@@ -37,6 +37,8 @@ section#header{
 .navbar ul li{
     list-style-type: none;
     cursor: pointer;
+    /* background-color: black; */
+    padding: 5px;
 }
 
 .navbar .left{
@@ -53,6 +55,38 @@ section#header{
     outline: none;
     font-weight: bold;
     cursor: pointer;
+}
+
+div.dropcontent{
+    display: block;
+    position: fixed;
+    left: 30%;
+    top: 10%;
+    width: 20%;
+    /* height: 52%; */
+    background-color: white;
+    z-index: 1;
+    padding: 10px;
+    box-shadow:  0 0 60px 0 rgba(2,4,69,.05);
+}
+
+div.dropcontent div{
+    margin: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+div.dropcontent h1, div.dropcontent p{
+    margin: 0;
+    padding: 0;
+}
+
+div.dropcontent h1{
+    font-size: 20px;
+}
+
+div.dropcontent p{
+    font-size: 14px;
 }
 
 .startfree{
