@@ -56,3 +56,10 @@ dropContent.onmouseover = () =>{
         }
     };
 };
+
+let bonsaiWorkflow = document.getElementById("bonsWorkflow");
+let divContent = document.getElementById("content");
+
+divContent.onmouseover = () =>{
+    divContent.classList = ("content")
+};
