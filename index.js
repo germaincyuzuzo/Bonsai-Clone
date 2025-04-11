@@ -1,5 +1,4 @@
 let backToTop = document.getElementById("backtotop");
-let btntoggle = document.getElementById("changeperiod");
 
 window.onscroll = () =>{
 
@@ -20,13 +19,9 @@ window.onscroll = () =>{
 
 };
 
+let btntoggle = document.getElementById("changeperiod");
+let isActive = false;
     btntoggle.onclick = () =>{
-        if (btntoggle.className = "changetoggle"){
-            btntoggle.onclick = () =>{
-                btntoggle.className = "";
-                btntoggle.removeAttribute.class;
-            }
-            }else{
-                btntoggle.className = "changetoggle";
-        };
+        isActive = !isActive;
+        btntoggle.classList.toggle("changetoggle", isActive);
     };
