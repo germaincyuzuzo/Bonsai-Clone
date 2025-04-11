@@ -126,6 +126,19 @@ div.periods div::before{
     border-radius: 50%;
 }
 
+div.periods div.changetoggle::before{
+    content: "";
+    background-image: url('./img/circle-svgrepo-com.svg');
+    display: inline-block;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 2px;
+    left: 12px;
+    border-radius: 50%;
+}
+
 .priceheading img{
     position: absolute;
     right: 28%;
@@ -196,6 +209,16 @@ div.plan .startfree{
     height: 70px;
     width: 100%;
     margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+div.plan .startfree2{
+    position: relative;
+    top: 15em;
+}
+
+.starter .startfree, .professional .startfree{
+    margin-top: 90px;
 }
 
 section.addons{

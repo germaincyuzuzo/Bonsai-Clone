@@ -20,6 +20,13 @@ window.onscroll = () =>{
 
 };
 
-// btntoggle.onclick = () =>{
-
-// };
+    btntoggle.onclick = () =>{
+        if (btntoggle.className = "changetoggle"){
+            btntoggle.onclick = () =>{
+                btntoggle.className = "";
+                btntoggle.removeAttribute.class;
+            }
+            }else{
+                btntoggle.className = "changetoggle";
+        };
+    };
