@@ -57,9 +57,36 @@ dropContent.onmouseover = () =>{
     };
 };
 
-let bonsaiWorkflow = document.getElementById("bonsWorkflow");
 let divContent = document.getElementById("content");
+let workflowContent = document.getElementById("workflowContent");
 
 divContent.onmouseover = () =>{
-    divContent.classList = ("content")
+    if (workflowContent.className !== "workflowDropDown"){
+        workflowContent.classList = ("workflowDropDown");
+        workflowContent.style.display = "grid";
+    }
+    divContent.onmouseleave = () => {
+        workflowContent.classList = ("");
+        workflowContent.style.display = "none";
+    }
+    workflowContent.onmouseover = () =>{
+        if (workflowContent.className !== "workflowDropDown"){
+            workflowContent.classList = ("workflowDropDown");
+            workflowContent.style.display = "grid";
+
+            dropContent.classList = ("dropcontent");
+            dropContent.style.display = "block";
+        }
+        workflowContent.onmouseleave = () => {
+            if (workflowContent.className == "workflowDropDown"){
+                workflowContent.classList = ("");
+                workflowContent.style.display = "none";
+
+                dropContent.classList = ("");
+                dropContent.style.display = "none";
+            }
+
+        }
+    };
+    
 };

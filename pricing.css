@@ -60,7 +60,7 @@ section#header{
 div.dropcontent{
     display: block;
     position: fixed;
-    left: 26%;
+    left: 24%;
     top: 10%;
     width: 28%;
     padding: 30px 0;
@@ -71,6 +71,7 @@ div.dropcontent{
 
 div.dropcontent div{
     padding: 20px;
+    cursor: pointer;
 }
 
 div.dropcontent hr{
@@ -88,6 +89,114 @@ div.dropcontent h1{
 
 div.dropcontent p{
     font-size: 14px;
+}
+
+div.workflowDropDown{
+    position: fixed;
+    top: 11%;
+    right: 10px;
+    background-color: white;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 638px;
+    box-shadow:  0 0 60px 0 rgba(2,4,69,.05);
+}
+
+div.workflowDropDown div{
+    padding: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+div.workflowDropDown div:hover{
+    box-shadow: 0 6px 10px rgba(0,0,0,0.08), 0 1px 18px rgba(0,0,0,0.12);
+}
+
+div.workflowDropDown div h1, div.workflowDropDown div h1{
+    margin: 0;
+    padding: 0;
+}
+
+div.workflowDropDown div h1{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+div.workflowDropDown div p{
+    font-size: 13px;
+}
+
+div.workflowDropDown div:nth-child(1) h1::before{
+    content: url('./img/invoices.svg');
+    position: relative;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 15px;
+}
+
+div.workflowDropDown div:nth-child(2) h1::before{
+    content: url('./img/Proposals\ icon.svg');
+    position: relative;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 15px;
+}
+
+div.workflowDropDown div:nth-child(3) h1::before{
+    content: url('./img/contracts\ icon.svg');
+    position: relative;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 15px;
+}
+
+div.workflowDropDown div:nth-child(4) h1::before{
+    content: url('./img/people-outline.svg');
+    position: relative;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 15px;
+}
+
+div.workflowDropDown div:nth-child(5) h1::before{
+    content: url('./img/reader-outline.svg');
+    position: relative;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 15px;
+}
+
+div.workflowDropDown div:nth-child(6) h1::before{
+    content: url('./img/time_tracking\ icon.svg');
+    position: relative;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 15px;
+}
+
+div.workflowDropDown div:nth-child(7) h1::before{
+    content: url('./img/accounting.svg');
+    position: relative;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 15px;
+}
+
+div.workflowDropDown div:nth-child(8) h1::before{
+    content: url('./img/task-tracking.svg');
+    position: relative;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 15px;
 }
 
 .startfree{
