@@ -60,20 +60,21 @@ section#header{
 div.dropcontent{
     display: block;
     position: fixed;
-    left: 30%;
+    left: 26%;
     top: 10%;
-    width: 20%;
-    /* height: 52%; */
+    width: 28%;
+    padding: 30px 0;
     background-color: white;
     z-index: 1;
-    padding: 10px;
     box-shadow:  0 0 60px 0 rgba(2,4,69,.05);
 }
 
 div.dropcontent div{
-    margin: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid lightgray;
+    padding: 20px;
+}
+
+div.dropcontent hr{
+    width: 290px;
 }
 
 div.dropcontent h1, div.dropcontent p{
