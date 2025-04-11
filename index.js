@@ -1,3 +1,5 @@
+// ADDING THE BACK TO TOP BUTTON BEHAVIOR ON SCROLL
+
 let backToTop = document.getElementById("backtotop");
 
 window.onscroll = () =>{
@@ -19,6 +21,8 @@ window.onscroll = () =>{
 
 };
 
+// ADDING THE BEHAVIOR TO THE TOGGLE BUTTON
+
 let btntoggle = document.getElementById("changeperiod");
 let isActive = false;
     btntoggle.onclick = () =>{
@@ -26,6 +30,8 @@ let isActive = false;
         btntoggle.classList.toggle("changetoggle", isActive);
     };
 
+// ADDING BEHAVIOR TO THE FIRST HOVER DROPDOWN ON THE PRODUCT LI
+    
 let product = document.getElementById("dropdown");
 let dropContent = document.getElementById("dropcontent");
 
@@ -56,6 +62,8 @@ dropContent.onmouseover = () =>{
         }
     };
 };
+
+// ADDING BEHAVIOR TO THE SECOND (WORKFLOW) DROPDOWN OF THE PRODUCT LI
 
 let divContent = document.getElementById("content");
 let workflowContent = document.getElementById("workflowContent");
