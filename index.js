@@ -98,3 +98,13 @@ divContent.onmouseover = () =>{
     };
     
 };
+
+
+// ADDING THE BEHAIOR OF THE FAQs
+
+let question = document.getElementById("question");
+let para = document.getElementById("para");
+
+question.onclick = () =>{
+    para.style.display = "block";
+};

@@ -519,6 +519,11 @@ section.faqs .questions div.q4 h2::after{
     left: 458px;
 }
 
+p#para{
+    font-size: 15px;
+    max-width: 85%;
+}
+
 footer{
     background-color: #e9fcf7;
 }
