@@ -153,3 +153,32 @@ let question4 = document.getElementById("question4");
                 para.style.display = "none";
             }
     };
+
+// TEMPLATE DROPDOWN
+
+let template = document.getElementById("tempdropdown");
+let tempcontent = document.getElementById("templateDropDown");
+
+template.onmouseover = () => {
+    if(tempcontent.className !== "templateDropDown"){
+        tempcontent.classList = ("templateDropDown");
+        tempcontent.style.display = "block";
+    }
+
+    template.onmouseleave = () => {
+        tempcontent.classList= ("");
+        tempcontent.style.display = "none";
+    };
+
+    tempcontent.onmouseover = () => {
+        if(tempcontent.className !== "templateDropDown"){
+            tempcontent.classList = ("templateDropDown");
+            tempcontent.style.display = "block";
+        }
+    
+        tempcontent.onmouseleave = () => {
+            tempcontent.classList.remove = ("templateDropDown");
+            tempcontent.style.display = "none";
+        };
+    }
+};
