@@ -102,9 +102,18 @@ divContent.onmouseover = () =>{
 
 // ADDING THE BEHAIOR OF THE FAQs
 
-let question = document.getElementById("question");
-let para = document.getElementById("para");
+let questions = document.querySelectorAll(".questions");
 
-question.onclick = () =>{
-    para.style.display = "block";
-};
+    questions.forEach(que => {
+        que.onclick = () =>{
+
+            let paragraphs = document.querySelectorAll("#para");
+            paragraphs.forEach(para => {
+                if(para.style.display == "none"){
+                    para.style.display = "block";
+                }else{
+                    para.style.display = "none";
+                }
+            })
+        };
+    });
