@@ -102,18 +102,54 @@ divContent.onmouseover = () =>{
 
 // ADDING THE BEHAIOR OF THE FAQs
 
-let questions = document.querySelectorAll(".questions");
+// QUESTION 1
+let question1 = document.getElementById("question1");
 
-    questions.forEach(que => {
-        que.onclick = () =>{
+    question1.onclick = () =>{
 
-            let paragraphs = document.querySelectorAll("#para");
-            paragraphs.forEach(para => {
-                if(para.style.display == "none"){
-                    para.style.display = "block";
-                }else{
-                    para.style.display = "none";
-                }
-            })
-        };
-    });
+        let para = document.getElementById("para1");
+            if(para.style.display == "none"){
+                para.style.display = "block";
+            }else{
+                para.style.display = "none";
+            }
+    };
+
+// QUESTION 2
+let question2 = document.getElementById("question2");
+
+    question2.onclick = () =>{
+
+        let para = document.getElementById("para2");
+            if(para.style.display == "none"){
+                para.style.display = "block";
+            }else{
+                para.style.display = "none";
+            }
+    };
+
+// QUESTION 3
+let question3 = document.getElementById("question3");
+
+    question3.onclick = () =>{
+
+        let para = document.getElementById("para3");
+            if(para.style.display == "none"){
+                para.style.display = "block";
+            }else{
+                para.style.display = "none";
+            }
+    };
+
+// QUESTION 4
+let question4 = document.getElementById("question4");
+
+    question4.onclick = () =>{
+
+        let para = document.getElementById("para4");
+            if(para.style.display == "none"){
+                para.style.display = "block";
+            }else{
+                para.style.display = "none";
+            }
+    };
