@@ -155,7 +155,7 @@ let question4 = document.getElementById("question4");
     };
 
 // TEMPLATE DROPDOWN
-
+// ADDING BEHAVIOR TO THE FIRST DROPDOWN
 let template = document.getElementById("tempdropdown");
 let tempcontent = document.getElementById("templateDropDown");
 
@@ -180,5 +180,252 @@ template.onmouseover = () => {
             tempcontent.classList.remove = ("templateDropDown");
             tempcontent.style.display = "none";
         };
+    }
+};
+
+
+// ADDING BEHAVIOR TO THE SECOND DROPDOWN
+
+let contTemp = document.getElementById("contractTemp");
+let tempCont = document.getElementById("tempCont");
+
+contTemp.onmouseover = () => {
+    if(tempCont.className !== "tempCont"){
+        tempCont.classList = ("tempCont");
+        tempCont.style.display = "block";
+    }
+
+    contTemp.onmouseleave = () => {
+        tempCont.classList = ("");
+        tempCont.style.display = "none";
+    }
+
+    tempCont.onmouseover = () => {
+        if(tempCont.className !== "tempCont"){
+            tempCont.classList = ("tempCont");
+            tempCont.style.display = "block";
+    
+            tempcontent.classList = ("templateDropDown");
+            tempcontent.style.display = "block";
+        }
+    
+        tempCont.onmouseleave = () => {
+            tempCont.classList = ("");
+            tempCont.style.display = "none";
+
+            tempcontent.classList = ("");
+            tempcontent.style.display = "none";
+        }
+    }
+};
+
+// ADDING BEHAVIOR TO THE PROPOSAL DROPDOWN
+
+let propTemp = document.getElementById("proposalTemp");
+let propContent = document.getElementById("propContent");
+
+propTemp.onmouseover = () => {
+    if(propContent.className !== "tempCont"){
+        propContent.classList = ("tempCont");
+        propContent.style.display = "block";
+    }
+
+    propTemp.onmouseleave = () => {
+        propContent.classList = ("");
+        propContent.style.display = "none";
+    }
+
+    propContent.onmouseover = () => {
+        if(propContent.className !== "tempCont"){
+            propContent.classList = ("tempCont");
+            propContent.style.display = "block";
+    
+            tempcontent.classList = ("templateDropDown");
+            tempcontent.style.display = "block";
+        }
+    
+        propContent.onmouseleave = () => {
+            propContent.classList = ("");
+            propContent.style.display = "none";
+
+            tempcontent.classList = ("");
+            tempcontent.style.display = "none";
+        }
+    }
+};
+
+// ADDING BEHAVIOR TO THE PROPOSAL DROPDOWN
+
+let invoiceTemp = document.getElementById("invoiceTemp");
+let invoiceContent = document.getElementById("invoiceContent");
+
+invoiceTemp.onmouseover = () => {
+    if(invoiceContent.className !== "tempCont"){
+        invoiceContent.classList = ("tempCont");
+        invoiceContent.style.display = "block";
+    }
+
+    invoiceTemp.onmouseleave = () => {
+        invoiceContent.classList = ("");
+        invoiceContent.style.display = "none";
+    }
+
+    invoiceContent.onmouseover = () => {
+        if(invoiceContent.className !== "tempCont"){
+            invoiceContent.classList = ("tempCont");
+            invoiceContent.style.display = "block";
+    
+            tempcontent.classList = ("templateDropDown");
+            tempcontent.style.display = "block";
+        }
+    
+        invoiceContent.onmouseleave = () => {
+            invoiceContent.classList = ("");
+            invoiceContent.style.display = "none";
+
+            tempcontent.classList = ("");
+            tempcontent.style.display = "none";
+        }
+    }
+};
+
+
+// ADDING BEHAVIOR TO THE AGREEMENT DROPDOWN
+
+let agreeTemp = document.getElementById("agreementTemp");
+let agreeContent = document.getElementById("agreementContent");
+
+agreeTemp.onmouseover = () => {
+    if(agreeContent.className !== "tempCont"){
+        agreeContent.classList = ("tempCont");
+        agreeContent.style.display = "block";
+    }
+
+    agreeTemp.onmouseleave = () => {
+        agreeContent.classList = ("");
+        agreeContent.style.display = "none";
+    }
+
+    agreeContent.onmouseover = () => {
+        if(agreeContent.className !== "tempCont"){
+            agreeContent.classList = ("tempCont");
+            agreeContent.style.display = "block";
+    
+            tempcontent.classList = ("templateDropDown");
+            tempcontent.style.display = "block";
+        }
+    
+        agreeContent.onmouseleave = () => {
+            agreeContent.classList = ("");
+            agreeContent.style.display = "none";
+
+            tempcontent.classList = ("");
+            tempcontent.style.display = "none";
+        }
+    }
+};
+
+// ADDING BEHAVIOR TO THE QUOTATION DROPDOWN
+
+let quoteTemp = document.getElementById("quoteTemp");
+let quoteContent = document.getElementById("quoteContent");
+
+quoteTemp.onmouseover = () => {
+    if(quoteContent.className !== "tempCont"){
+        quoteContent.classList = ("tempCont");
+        quoteContent.style.display = "block";
+    }
+
+    quoteTemp.onmouseleave = () => {
+        quoteContent.classList = ("");
+        quoteContent.style.display = "none";
+    }
+
+    quoteContent.onmouseover = () => {
+        if(quoteContent.className !== "tempCont"){
+            quoteContent.classList = ("tempCont");
+            quoteContent.style.display = "block";
+    
+            tempcontent.classList = ("templateDropDown");
+            tempcontent.style.display = "block";
+        }
+    
+        quoteContent.onmouseleave = () => {
+            quoteContent.classList = ("");
+            quoteContent.style.display = "none";
+
+            tempcontent.classList = ("");
+            tempcontent.style.display = "none";
+        }
+    }
+};
+
+// ADDING BEHAVIOR TO THE SCOPE OF WORK DROPDOWN
+
+let scopeTemp = document.getElementById("scopeTemp");
+let scopeContent = document.getElementById("scopeContent");
+
+scopeTemp.onmouseover = () => {
+    if(scopeContent.className !== "tempCont"){
+        scopeContent.classList = ("tempCont");
+        scopeContent.style.display = "block";
+    }
+
+    scopeTemp.onmouseleave = () => {
+        scopeContent.classList = ("");
+        scopeContent.style.display = "none";
+    }
+
+    scopeContent.onmouseover = () => {
+        if(scopeContent.className !== "tempCont"){
+            scopeContent.classList = ("tempCont");
+            scopeContent.style.display = "block";
+    
+            tempcontent.classList = ("templateDropDown");
+            tempcontent.style.display = "block";
+        }
+    
+        scopeContent.onmouseleave = () => {
+            scopeContent.classList = ("");
+            scopeContent.style.display = "none";
+
+            tempcontent.classList = ("");
+            tempcontent.style.display = "none";
+        }
+    }
+};
+
+// ADDING BEHAVIOR TO THE BRIEF DROPDOWN
+
+let briefTemp = document.getElementById("briefTemp");
+let briefContent = document.getElementById("briefContent");
+
+briefTemp.onmouseover = () => {
+    if(briefContent.className !== "tempCont"){
+        briefContent.classList = ("tempCont");
+        briefContent.style.display = "block";
+    }
+
+    briefTemp.onmouseleave = () => {
+        briefContent.classList = ("");
+        briefContent.style.display = "none";
+    }
+
+    briefContent.onmouseover = () => {
+        if(briefContent.className !== "tempCont"){
+            briefContent.classList = ("tempCont");
+            briefContent.style.display = "block";
+    
+            tempcontent.classList = ("templateDropDown");
+            tempcontent.style.display = "block";
+        }
+    
+        briefContent.onmouseleave = () => {
+            briefContent.classList = ("");
+            briefContent.style.display = "none";
+
+            tempcontent.classList = ("");
+            tempcontent.style.display = "none";
+        }
     }
 };
