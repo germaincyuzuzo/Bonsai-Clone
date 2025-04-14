@@ -429,3 +429,21 @@ briefTemp.onmouseover = () => {
         }
     }
 };
+
+
+if (window.innerWidth < 991){
+    let menuopen = document.getElementById("menuopen");
+    let header = document.getElementById("header");
+    let mediamenu = document.getElementById("mediamenu");
+    let menuclose = document.getElementById("menuclose");
+
+    menuopen.onclick = () => {
+        mediamenu.style.display = "block";
+        header.style.display = "none";
+};
+
+    menuclose.onclick = () =>{
+        mediamenu.style.display = "none";
+        header.style.display = "block";
+    };
+}
