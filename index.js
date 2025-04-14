@@ -440,7 +440,7 @@ if (window.innerWidth < 991){
     menuopen.onclick = () => {
         mediamenu.style.display = "block";
         header.style.display = "none";
-};
+    };
 
     menuclose.onclick = () =>{
         mediamenu.style.display = "none";
