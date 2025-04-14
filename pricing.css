@@ -59,6 +59,10 @@ section#header{
     cursor: pointer;
 }
 
+.navbar div.menu{
+    display: none;
+}
+
 /* NAV BAR DROPDOWNS */
 
 div.dropcontent{
@@ -372,10 +376,10 @@ div.plan .startfree{
     margin-bottom: 20px;
 }
 
-div.plan .startfree2{
+/* div.plan .startfree2{
     position: relative;
     top: 15em;
-}
+} */
 
 .starter .startfree, .professional .startfree{
     margin-top: 90px;
@@ -761,7 +765,7 @@ div.tempCont div{
 
 div.tempCont p{
     padding: 20px;
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     font-size: 15px;
 
 }
@@ -769,4 +773,209 @@ div.tempCont p{
 div.tempCont a{
     text-decoration: none;
     color: #00b289;
+}
+
+/* MEDIA SCREENS */
+
+@media (max-width: 990px) {
+
+    section#header{
+        height: 7%;
+    }
+    .navbar ul, .navbar div.left{
+        display: none;
+    }
+
+    .navbar{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 84%;
+    }
+
+    .navbar div.right img{
+        max-width: 35%;
+    }
+    .navbar div.menu img{
+        max-width: 10%;
+        cursor: pointer;
+    }
+    .navbar div.menu{
+        text-align: end;
+        display: block;
+    }
+
+    .periods img{
+        display: none;
+    }
+
+    section.plans{
+        display: block;
+        max-width: 90%;
+    }
+
+    section.plans div{
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 890px){
+    section.faqs .questions div.q1 h2::after{
+        content: "";
+        background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+        background-size: contain;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 7px;
+        left: 10px;
+    }
+    
+    section.faqs .questions div.q2 h2::after{
+        content: "";
+        background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+        background-size: contain;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 7px;
+        left: 10px;
+    }
+    
+    section.faqs .questions div.q3 h2::after{
+        content: "";
+        background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+        background-size: contain;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 7px;
+        left: 10px;
+    }
+    
+    section.faqs .questions div.q4 h2::after{
+        content: "";
+        background-image: url('./img/down-arrow-5-svgrepo-com.svg');
+        background-size: contain;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 7px;
+        left: 10px;
+    }
+
+}
+
+@media (max-width: 800px){
+
+    .navbar{
+        max-width: 85%;
+    }
+    
+    .navbar div.right img{
+        max-width: 40%;
+    }
+
+    div.priceheading{
+        max-width: 85%;
+    }
+
+    div.priceheading h1{
+        font-size: 25px;
+        text-align: start;
+        font-weight: lighter;
+    }
+
+    div.priceheading .periods{
+        justify-content: end;
+        font-weight: lighter;
+    }
+
+    section.yourbusiness{
+        max-width: 90%;
+    }
+
+    section.yourbusiness p{
+        font-size: 30px;
+        text-align: center;
+        width: 70%;
+    }
+
+    section.yourbusiness button{
+        height: 40px;
+    }
+
+    section.faqs h2{
+        font-size: 20px;
+    }
+
+    section.faqs p{
+        font-size: 13px;
+    }
+
+    main.footer section h1{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    main.footer{
+        display: block;
+        justify-items: start;
+    }
+
+    main.footer section div ul li{
+        font-weight: lighter;
+    }
+}
+
+@media (max-width: 600px){
+
+    section#header{
+        height: 8%;
+    }
+    .navbar div.right img{
+        max-width: 60%;
+    }
+
+    .navbar div.menu img{
+        max-width: 15%;
+        cursor: pointer;
+    }
+    section.addons h1{
+        font-size: 20px;
+    }
+
+    section.addons div.addondiv{
+        display: block;
+    }
+
+    section.addons div.addondiv span{
+        text-align: start;
+    }
+}
+
+@media (max-width: 500px){
+    section#header{
+        height: 7%;
+    }
+    .navbar div.right img{
+        max-width: 70%;
+    }
+
+    .navbar div.menu img{
+        max-width: 18%;
+        cursor: pointer;
+    }
+
+    div.priceheading{
+        display: block;
+    }
+
+    section.yourbusiness{
+        display: block;
+        justify-items: center;
+    }
 }
