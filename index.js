@@ -25,9 +25,39 @@ window.onscroll = () =>{
 
 let btntoggle = document.getElementById("changeperiod");
 let isActive = false;
+let starterPrice = document.getElementById("starterprice");
+let proPrice = document.getElementById("proprice");
+let businessPrice = document.getElementById("businessprice");
+let counter = 1;
+let monthly = document.getElementById("monthly");
+let yearly = document.getElementById("yearly");
+
     btntoggle.onclick = () =>{
+        
         isActive = !isActive;
         btntoggle.classList.toggle("changetoggle", isActive);
+
+        
+        if (counter % 2 !==0){
+            counter++;
+            starterPrice.innerHTML = "17";
+            proPrice.innerHTML = "32";
+            businessPrice.innerHTML = "52";
+
+            monthly.style.color = "gray";
+            yearly.style.color = "black";
+
+        } else if(counter % 2 ==0){
+            counter++;
+            starterPrice.innerHTML = "24";
+            proPrice.innerHTML = "39";
+            businessPrice.innerHTML = "79";
+
+            yearly.style.color = "gray";
+            monthly.style.color = "black";
+        }
+
+        
     };
 
 // ADDING BEHAVIOR TO THE FIRST HOVER DROPDOWN ON THE PRODUCT LI
