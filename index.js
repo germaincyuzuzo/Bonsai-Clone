@@ -31,6 +31,7 @@ let businessPrice = document.getElementById("businessprice");
 let counter = 1;
 let monthly = document.getElementById("monthly");
 let yearly = document.getElementById("yearly");
+let durations = document.getElementsByClassName("duration");
 
     btntoggle.onclick = () =>{
         
@@ -47,6 +48,12 @@ let yearly = document.getElementById("yearly");
             monthly.style.color = "gray";
             yearly.style.color = "black";
 
+            durations[0].innerHTML = "/MONTH - BILLED YEARLY";
+
+            durations[1].innerHTML = "/MONTH - BILLED YEARLY";
+
+            durations[2].innerHTML = "/MONTH - BILLED YEARLY";
+
         } else if(counter % 2 ==0){
             counter++;
             starterPrice.innerHTML = "24";
@@ -55,6 +62,13 @@ let yearly = document.getElementById("yearly");
 
             yearly.style.color = "gray";
             monthly.style.color = "black";
+
+            durations[0].innerHTML = "/MONTH";
+
+            durations[1].innerHTML = "/MONTH";
+
+            durations[2].innerHTML = "/MONTH";
+
         }
 
         
