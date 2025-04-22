@@ -1042,18 +1042,3 @@ div.tempCont a{
         justify-items: center;
     }
 }
-
-
-/* TESTING JQUERY */
-
-div.testing{
-    background-color: green;
-    color: white;
-    width: 250px;
-    margin: 0 auto;
-}
-
-div.testing h2{
-    font-size: 20px;
-    /* text-align: center; */
-}
